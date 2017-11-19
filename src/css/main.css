@@ -1,0 +1,735 @@
+:root {
+    --mainRed: #b32025;
+    --mainBlue: #5385c5;
+    --mainYellow: #faa71a;
+    --mainGreen: #376f3a;
+    --focusBlue: #00AAEE;
+    --focusRed: #CD3328;
+
+    --darkGray: rgba(20,20,20,1);
+    --lightGray: rgba(35,35,35,1);
+}
+
+/* Small devices (tablets, 768px and up) */
+
+/* Medium devices (desktops, 992px and up) */
+
+/* Large devices (large desktops, 1200px and up) */
+
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "museo-sans", "roboto", 'helvetica', 'arial', sans-serif !important;
+    background-color: var(--darkGray) !important;
+}
+body h1, p, div {
+    color: white;
+    font-size: 16px;
+}
+
+text {
+    font-family: "museo-sans", "roboto", 'helvetica', 'arial', sans-serif !important;
+}
+
+.var-red {
+    color: var(--mainRed);
+}
+.var-blue {
+    color: var(--mainBlue);
+}
+.var-green {
+    color: var(--mainGreen);
+}
+.var-yellow {
+    color: var(--mainYellow);
+}
+.selector .var-red {
+    fill: var(--mainRed);
+}
+.selector .var-blue {
+    fill: var(--mainBlue);
+}
+.selector .var-green {
+    fill: var(--mainGreen);
+}
+.selector .var-yellow {
+    fill: var(--mainYellow);
+}
+.image-holder .var-red {
+    background-position: 0vw;
+}
+.image-holder .var-blue {
+    background-position: -75vw;
+}
+.image-holder .var-green {
+    background-position: -149vw;
+}
+.image-holder .var-yellow {
+    background-position: -225vw;
+}
+#imgSelector {
+    top: 80px;
+}
+.bg-images {
+    position: absolute;
+    width: 75vw;
+    height: 75vw;
+    overflow-x: hidden;
+    opacity: .35;
+    margin-left: -175px;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+.image-holder {
+    position: relative;
+    margin-top: 0;
+}
+.moving-img {
+    position: absolute;
+    display: inline-block;
+    background-image: url('../img/bg-images.png');
+    background-size: 400%;
+    background-repeat: no-repeat;
+    width: 75vw;
+    height: 75vw;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.landing-container {
+    background-color: var(--darkGray);
+    min-height: 100vh;
+}
+
+.title-row {
+    margin-top: 92px;
+}
+.square {
+    position: absolute;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    top: 40px;
+    left: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.square:hover {
+    cursor: pointer;
+}
+
+.bluesquare {
+    background-color: var(--mainBlue);
+    transform: rotate(90deg);
+}
+.greensquare {
+    background-color: var(--mainGreen);
+    transform: rotate(0deg);
+}
+.yellowsquare {
+    background-color: var(--mainYellow);
+    transform: rotate(90deg);
+}
+.title-switch {
+}
+.red-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 8.75em;
+    margin-left: 100px;
+    margin-bottom: 0px;
+}
+
+
+
+
+/* DATE HOLDER */
+.date-holder {
+    text-transform: uppercase;
+    font-size: 2.125em;
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+
+
+/* BODY COPY */
+.copy-holder {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+
+
+/* BUTTON */
+.row-button {
+    margin-top: 65px;
+}
+
+.CTA {
+    background-color: var(--mainBlue);
+    border: none;
+    border-radius: 1px;
+    width: 100%;
+    padding: 12px;
+    text-transform: uppercase;
+}
+.CTA:hover {
+    background-color: var(--focusBlue);
+    cursor: pointer;
+}
+
+
+
+/* LOCATION */
+.row-location {
+    position: absolute;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
+}
+.location-holder {
+    font-weight: 100;
+    font-size: .85em;
+}
+
+
+
+
+
+
+
+/* FORM CONTAINER */
+
+.row-form {
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    right: -340px;
+    z-index: 100;
+}
+.form-open {
+    right: 0;
+}
+.form-holder {
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    max-height: 200vh;
+    width: 340px;
+    background-color: var(--mainBlue);
+    padding: 30px;
+    padding-top: 60px;
+    overflow-y: scroll;
+}
+
+.success-message {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.fail-message {
+    text-align: center;
+    color: var(--mainRed);
+    margin-top: 20px;
+}
+
+.intro-text-holder {
+    text-align: center;
+}
+.intro-primary {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.intro-secondary {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.3em;
+    margin: 25px 0px;
+}
+
+
+/* ACTUAL FORM */
+form {
+    background-color: var(--mainBlue);
+    color: white;
+}
+form label {
+    color: ;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    height: -webkit-calc(4em);
+    height: calc(3em);
+    margin: 0 0 1em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 2px;
+    background: transparent;
+    resize: none;
+    outline: none;
+}
+input[type="text"][required]:focus {
+    border-color: var(--mainRed);
+}
+input[type="text"][required]:focus + label[placeholder]::before {
+    color: var(--mainRed);
+}
+input[type="text"][required]:focus + label[placeholder]::before, input[type="text"][required]:valid + label[placeholder]::before {
+    transition-duration: .2s;
+    transform: translate(0, -1.55em) scale(0.9, 0.9);
+    font-weight: 500;
+    font-style: normal;
+}
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+    content: attr(alt);
+}
+input[type="text"][required] + label[placeholder] {
+    display: block;
+    pointer-events: none;
+    line-height: 1em;
+    margin-top: calc(-3em - 2px);
+    margin-bottom: calc((3em - 1em) + 2px);
+}
+input[type="text"][required] + label[placeholder]::before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 calc(1em + 2px);
+    margin-top: 2px;
+    padding: 0 2px;
+    color: white;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, var(--mainBlue), var(--mainBlue));
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 10px;
+    background: var(--mainRed);
+}
+input[type="submit"]:hover {
+    background: var(--focusRed);
+}
+
+.sub-cta-holder {
+    margin-top: 25px;
+}
+.epic-link-holder, .fb-share-holder {
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+}
+.epic-link-holder:hover, .fb-share-holder:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.epic-link-holder {
+    float: left;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
+}
+
+.fortnite-logo {
+    background: url('../img/fortnite.png') no-repeat center top;
+    background-size: contain;
+    height: 65px;
+    margin-bottom: 10px;
+}
+.epic-link-copy, .fb-copy {
+    font-size: .75em;
+    font-weight: 700;
+}
+
+
+.fb-share-holder {
+    float: right;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
+}
+.share-logo::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    float: left;
+    background-image: url('../img/facebook-3-xxl.png');
+    background-size: contain;
+    height: 23px;
+    width: 23px;
+    left: 6px;
+    top: 6px;
+
+}
+.share-logo {
+    background-color: #2C4688;
+    height: 35px;
+    border-radius: 2px;
+    line-height: 35px;
+    margin: 20px 0;
+}
+
+
+
+/* TOGGLE */
+
+.toggle {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.toggle:hover {
+    cursor: pointer;
+}
+.toggle-circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-right: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-line1, .toggle-line2, .toggle-line3 {
+    height: 1px;
+    width: 25px;
+    background-color: white;
+    margin-top: 7.5px;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-line1 {
+    margin-left: 35%;
+}
+.toggle-line2 {
+    margin-left: 52%;
+}
+.toggle-line3 {
+    margin-left: 30%;
+}
+
+.toggle-line1-active {
+    margin-left: -20%;
+    background-color: var(--mainBlue);
+}
+.toggle-line2-active {
+    margin-left: -40%;
+    background-color: var(--mainBlue);
+}
+.toggle-line3-active {
+    margin-left: -15%;
+    background-color: var(--mainBlue);
+}
+.toggle-circle-active {
+    border-color: var(--mainBlue);
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+/* !!!!! LOWER PAGE //// BELOW FOLD !!!!! */
+
+
+
+.sub-fluid {
+    background-color: var(--darkGray);
+}
+.lower-container {
+    background-color: var(--darkGray);
+    min-height: 85vh;
+}
+.sub-head-row {
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.sub-head {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.75em;
+    line-height: 1.1em;
+}
+
+.info-head, .info-sub, .info-text {
+    margin-top: 15px;
+}
+.info-head {
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.info-sub {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1em;
+}
+.info-text {
+    font-weight: 500;
+}
+
+
+
+/* !!!!!!!!!!! SVG !!!!!!!!!!!!! */
+.info-body {
+    display: none;
+    font-weight: 300;
+    font-size: 1.125em;
+}
+.info-active {
+    display: block;
+}
+
+.selector {
+    opacity: .6;
+}
+.room-active {
+    opacity: 1 !important;
+}
+
+
+
+
+/* //////////// FOOTER ///////////// */
+.footer-container {
+    padding: 30px 0;
+    background-color: var(--lightGray);
+}
+.footer-fluid {
+    background-color: var(--lightGray);
+    margin-top: 50px;
+}
+
+.epic-link-holder-foot, .fb-share-holder-foot {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+}
+.epic-link-holder-foot:hover, .fb-share-holder-foot:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.epic-link-holder-foot {
+    float: left;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
+}
+
+.fortnite-logo-foot {
+    background: url('../img/fortnite.png') no-repeat center top;
+    background-size: contain;
+    height: 65px;
+    margin-bottom: 10px;
+}
+.epic-link-copy-foot, .fb-copy-foot {
+    font-size: .75em;
+    font-weight: 500;
+}
+
+
+/* fb */
+.fb-share-holder-foot {
+    float: right;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
+}
+.share-logo-foot::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    float: left;
+    background-image: url('../img/facebook-3-xxl.png');
+    background-size: contain;
+    height: 23px;
+    width: 23px;
+    left: 6px;
+    top: 6px;
+
+}
+.share-logo-foot {
+    background-color: #2C4688;
+    height: 35px;
+    border-radius: 2px;
+    line-height: 35px;
+    margin: 12px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* wall display */
+@media screen and (min-width: 1300px) {
+    .bg-images {
+    margin-left: -500px;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .square {
+    top: 20px;
+    left: 0px;
+    }
+    .date-holder {
+    text-align: right;
+    }
+    .title-holder h1::before {
+    top: 20px;
+    left: 0px;
+    }
+
+    .info-block {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 765px) {
+     .epic-link-holder-foot, .fb-share-holder-foot {
+        margin-top: 30px;
+    }
+    .row-location {
+    position: relative;
+    float: none;
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+    bottom: 0px;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .title-row {
+        margin-top: 0px;
+    }
+    .square {
+        display: none;
+    }
+
+    .title-switch h1 {
+        font-size: 7em;
+        padding-left: 0px;
+        line-height: .9em;
+    }
+    .red-title {
+        margin-left: 0px;
+    }
+    .date-holder {
+        text-transform: uppercase;
+        font-size: 2.125em;
+        font-weight: 100;
+        margin-top: -5px;
+    }
+    .row-button {
+        margin-top: 35px;
+    }
+    .bg-images {
+        margin-left: -120px;
+    }
+    .share-logo-foot {
+        margin: 20px 0;
+    }
+
+
+
+
+
+
+    .row-form {
+        right: -100vw; /**/
+    }
+    .form-open {
+        right: 0;   /**/
+    }
+    .form-holder {
+        max-height: 100vh; /**/
+        width: 100vw;     /**/
+    }
+    .intro-primary {
+        font-size: 1.1em;  /**/
+    }
+    .intro-secondary {
+        font-size: 1.1em;   /**/
+        margin: 5px 0px;   /**/
+    }
+
+
+    /* ACTUAL FORM */
+
+    .sub-cta-holder {
+        margin-top: 20px;  /**/
+    }
+
+    /* TOGGLE */
+
+    .toggle {
+        position: absolute;    /**/
+        left: -55px;           /**/
+        top: -30px;            /**/
+    }
+
+    .toggle-line1-active {
+        background-color: white; /**/
+    }
+    .toggle-line2-active {
+        background-color: white; /**/
+    }
+    .toggle-line3-active {
+        background-color: white; /**/
+    }
+    .toggle-circle-active {
+        border-color: white;   /**/
+        margin-left: 75px;     /**/
+    }
+
+
+}
+/*Iphone SE */
+@media screen and (max-width: 350px) {
+    .copy-holder {
+        font-size: 1em;
+        font-weight: 300;
+        margin-top: 32px;
+    }
+    .location-holder {
+        font-weight: 100;
+        font-size: .8em;
+    }
+    .bg-images {
+    margin-left: -100px;
+    }
+}
