@@ -1,0 +1,26 @@
+/*
+ * Website Styles
+ *
+ * This document contains all of the styles for the website. This is compiled to
+ * a single CSS file to minimize page load.
+ */
+/*
+ * Sass Mixins
+ *
+ * This document contains a collection of useful Sass mixins. This allows the
+ * use of reuseable groups of styles for items such as vendor prefixes.
+ */
+/*
+ * Sass Variables
+ *
+ * This document contains a collection of Sass variables for the website. This
+ * allows the use of reuseable values such as colors and fonts.
+ */
+/*
+ * Page Styles
+ *
+ * This document contains all of the styles for basic website pages. This
+ * includes items such as wrappers and base typography.
+ */
+body {
+  margin: 0; }
