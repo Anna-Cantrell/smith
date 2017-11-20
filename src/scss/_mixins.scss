@@ -13,3 +13,33 @@
     display: table;
   }
 }
+
+@mixin navbar($color: white, $hue: light) {
+  .nav-logo {
+    display: inline-block;
+    height: 65px;
+    margin-top: ($nav-height - $logo-height) / 2;
+    background: {
+      image: url('../img/smith-logo-#{$hue}.png');
+      size: contain;
+      repeat: no-repeat;
+    }
+
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    color: $color;
+    font-weight: 700;
+    letter-spacing: .8px;
+    font-size: 20px;
+
+      li {
+        display: inline-block;
+        margin: auto 20px;
+        line-height: $nav-height;
+      }
+  }
+}

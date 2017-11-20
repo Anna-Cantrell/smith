@@ -6,4 +6,14 @@
  *
  */
 
- 
+ .header-nav {
+   height: $nav-height;
+   width: 100%;
+
+    &.dark {
+      background-color: $nav-bg-dark;
+
+       @include navbar;
+
+    }
+ }

@@ -6,9 +6,12 @@
  */
 
 // Global Requirements
-@import "header";
-@import "mixins";
+@import url("https://use.typekit.net/wwc3ieq.css");
 @import "variables";
+@import "mixins";
+
 
 // Components
+@import "header";
 @import "page";
+@import "footer";

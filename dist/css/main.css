@@ -4,12 +4,7 @@
  * This document contains all of the styles for the website. This is compiled to
  * a single CSS file to minimize page load.
  */
-/*
- * Sass Mixins
- *
- * This document contains a collection of useful Sass mixins. This allows the
- * use of reuseable groups of styles for items such as vendor prefixes.
- */
+@import url("https://use.typekit.net/wwc3ieq.css");
 /*
  * Sass Variables
  *
@@ -17,10 +12,57 @@
  * allows the use of reuseable values such as colors and fonts.
  */
 /*
+ * Sass Mixins
+ *
+ * This document contains a collection of useful Sass mixins. This allows the
+ * use of reuseable groups of styles for items such as vendor prefixes.
+ */
+/*
+ *
+ * Header Styles
+ *
+ * This document contains all of the styles for header and navigation.
+ *
+ */
+.header-nav {
+  height: 140px;
+  width: 100%; }
+  .header-nav.dark {
+    background-color: rgba(0, 0, 0, 0.5); }
+    .header-nav.dark .nav-logo {
+      display: inline-block;
+      height: 65px;
+      margin-top: 37.5px;
+      background-image: url("../img/smith-logo-light.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .header-nav.dark ul {
+      list-style: none;
+      display: inline-block;
+      float: right;
+      color: white;
+      font-weight: 700;
+      letter-spacing: .8px;
+      font-size: 20px; }
+      .header-nav.dark ul li {
+        display: inline-block;
+        margin: auto 20px;
+        line-height: 140px; }
+
+/*
  * Page Styles
  *
  * This document contains all of the styles for basic website pages. This
  * includes items such as wrappers and base typography.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  font: 14px 'proxima-nova', helvetica, sans-serif; }
+
+/*
+ *
+ * Footer Styles
+ *
+ * This document contains all of the styles for footer and footer navigation.
+ *
+ */
