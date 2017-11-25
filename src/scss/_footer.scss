@@ -6,4 +6,151 @@
  *
  */
 
- 
+ footer {
+   height: 350px;
+   background: {
+     image: url('../img/gplaypattern.png');
+     size: 160px;
+   }
+   padding-top: 80px;
+
+       & img {
+         width: 65%;
+       }
+       img:last-child {
+         margin-top: 40px;
+       }
+
+     & .footer-section {
+       h2 {
+         text-transform: uppercase;
+         font-weight: 700;
+         @extend %clear-margin-padding;
+       }
+       ul {
+         list-style: none;
+         -webkit-padding-start: 0px;
+         margin-top: 15px;
+
+         & li {
+           position: relative;
+           font: {
+             size: 1.7em;
+           }
+           display: inline-block;
+           clear: both;
+           line-height: 1.9em;
+
+           @include interactive-underline(35px);
+         }
+       }
+
+       p {
+         margin-top: 15px;
+         font-size: 1.7em;
+       }
+
+       & .social-logos {
+         margin-top: 35px;
+       }
+
+       &.social img {
+         max-width: 23%;
+         display: inline-block;
+         vertical-align: middle;
+         &:last-child {
+           margin-top: 0px;
+           margin-left: 12%;
+         }
+         &:hover {
+           cursor: pointer;
+         }
+       }
+
+       & span {
+         text-transform: uppercase;
+         color: $smith-blue;
+         font-weight: 700;
+         line-height: 2em;
+         transition: all .3s;
+
+         &:hover {
+           color: $type-dark;
+           cursor: pointer;
+         }
+       }
+     }
+ }
+
+ @media screen and (max-width: 993px) {
+   footer {
+
+       & .footer-section {
+         h2 {
+           font-size: 2em;
+         }
+         ul {
+           & li {
+             font-size: 1.4em;
+             @include interactive-underline(28px);
+           }
+         }
+         p {
+           font-size: 1.4em;
+         }
+         & span {
+           font-size: .9em;
+         }
+       }
+   }
+ }
+
+
+//mobile
+ @media screen and (max-width: 993px) {
+   .col-3 {
+     width: 100%;
+   }
+   footer {
+     background: {
+       image: url('../img/gplaypattern.png');
+       size: 160px;
+     }
+     height: 1200px;
+     padding: 80px 30px;
+     text-align: center;
+
+         & img {
+           width: 35%;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+         }
+
+       & .footer-section {
+         h2 {
+           margin-top: 80px;
+         }
+         ul {
+           & li {
+             font-size: 2.2em;
+             display: block;
+           }
+         }
+         p {
+           margin-top: 15px;
+           font-size: 2.2em;
+           margin-bottom: 40px;
+         }
+         & .social-logos {
+           margin-top: 35px;
+         }
+         &.social img {
+           max-width: 16%;
+         }
+         & span {
+           font-size: 1.1em;
+         }
+       }
+   }
+}

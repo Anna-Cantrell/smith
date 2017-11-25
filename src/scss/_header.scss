@@ -9,11 +9,44 @@
  .header-nav {
    height: $nav-height;
    width: 100%;
+   position: absolute;
 
     &.dark {
       background-color: $nav-bg-dark;
-
        @include navbar;
-
+    }
+    &.light {
+      background-color: $nav-bg-light;
+       @include navbar($type-dark, dark);
     }
  }
+
+@include mobile-nav;
+
+
+@media screen and (max-width: 800px) {
+  .header-nav {
+    &.dark, &.light {
+      ul { display:none; }
+      & .nav-logo {
+        margin-left: 30px;
+        width: 40%;
+        background-size: 135px auto;
+      }
+
+    }
+
+
+
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header-nav {
+
+    & .mobile-nav-button {
+      display: none;
+    }
+
+  }
+}

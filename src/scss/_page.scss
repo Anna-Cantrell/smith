@@ -9,4 +9,18 @@
 body {
   margin: 0;
   font: 14px 'proxima-nova', helvetica, sans-serif;
+  color: $type-dark;
+}
+
+h1 {
+  font: {
+    size: 36px;
+    weight: 700;
+  }
+}
+h2 {
+  font-weight: 700;
+}
+h3 {
+  font-size: 22px;
 }

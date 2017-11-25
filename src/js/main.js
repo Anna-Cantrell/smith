@@ -5,44 +5,28 @@
  * using jQuery to simplify code complexity.
  */
 var clicks = 0;
-var ctaButton = document.getElementById('#cta');
-var toggle = document.getElementById('toggle');
-var square = 'red';
+const mobileNav = document.getElementById('mobile-nav-menu');
+const navButton = document.getElementById('mobile-nav-button');
+const ham1 = document.getElementById('ham1');
+const ham2 = document.getElementById('ham2');
+const ham3 = document.getElementById('ham3');
 
 function menuOpen() {
-    $('#form-holder').addClass('form-open');
-    $('#form-holder').addClass('form-open');
-    $('#menuCircle').addClass('toggle-circle-active');
-    $('#line1').addClass('toggle-line1-active');
-    $('#line2').addClass('toggle-line2-active');
-    $('#line3').addClass('toggle-line3-active');
+    $('#mobile-nav-menu').addClass('form-open');
+    $('#ham1').addClass('ham1');
+    $('#ham2').addClass('ham2');
+    $('#ham3').addClass('ham3');
 }
 
-if (window.location.search === "?success=true") {
-    menuOpen();
-    clicks = 1;
-    $('<div class="success-message">You\'re all set! we\'ll see you there.</div>').insertAfter('#actual-form')
-}
-if (window.location.search === "?success=false") {
-    menuOpen();
-    clicks = 1;
-    $('<div class="fail-message">Sorry! Something went wrong, try again.</div>').insertAfter('#actual-form')
-}
-
-$('#cta, #ctaFooter').click(function() {
-    menuOpen();
-    clicks = 1;
-});
-$('#toggle').click(function() {
+$('#mobile-nav-button').click(function() {
     clicks ++;
     if (clicks % 2 != 0 ) {
         menuOpen();
     } else {
-        $('#form-holder').removeClass('form-open');
-        $('#menuCircle').removeClass('toggle-circle-active');
-        $('#line1').removeClass('toggle-line1-active');
-        $('#line2').removeClass('toggle-line2-active');
-        $('#line3').removeClass('toggle-line3-active');
+        $('#mobile-nav-menu').removeClass('form-open');
+        $('#ham1').removeClass('ham1');
+        $('#ham2').removeClass('ham2');
+        $('#ham3').removeClass('ham3');
     }
 });
 
@@ -108,12 +92,11 @@ var imgSelector = document.getElementById('imgSelector');
         function parallaxImage() {
 
             var scrolltop = window.pageYOffset;
-            
+
             imgSelector.style.top = imgTop - (scrolltop * -.15) + 'px';
         }
-              
+
           //tell java script that if 'scroll' happens in this window, then do this function
-          window.addEventListener('scroll', function() { 
+          window.addEventListener('scroll', function() {
               requestAnimationFrame(parallaxImage) //call our parallax function on next available screen paint
           }, false)
-

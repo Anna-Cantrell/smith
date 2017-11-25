@@ -1,0 +1,133 @@
+/*
+ * Hero Image styles
+ *
+ * Containes styles for the top hero image
+ * on the home page and individual projects pages
+ *
+ */
+
+.home-hero {
+  height: 630px;
+
+    & img {
+      min-height: 100%;
+      min-width: 100%;
+    }
+}
+.hero-image {
+  position: absolute;
+  height: 630px;
+  overflow: hidden;
+  @extend %absolute-center;
+  z-index: -1;
+}
+
+.hero-title-container {
+  display: inline-block;
+  float: left;
+  clear: both;
+  max-width: 33%;
+  margin-top: 375px;
+  background-color: $nav-bg-dark;
+  padding: 20px;
+  color: white;
+
+    & .hero-artist-name {
+      @extend %clear-margin-padding;
+      font: {
+        weight: 700;
+      }
+      letter-spacing: 1.1px;
+    }
+
+    & .hero-work-name {
+      @extend %clear-margin-padding;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    & .hero-available {
+      @extend %clear-margin-padding;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+    }
+}
+
+.hero-visit-container {
+  position: relative;
+  text-align: right;
+  float: right;
+  margin-top: -100px;
+    & h2 {
+      color: $smith-blue;
+      @extend %clear-margin-padding;
+      transition: all .3s;
+
+      &:hover {
+        color: $type-dark;
+        cursor: pointer;
+      }
+    }
+    & p {
+      font-size: 1.3em;
+      line-height: 1.4em;
+    }
+}
+
+
+// Queries
+
+@media screen and (min-width: 1500px) {
+  .hero-visit-container {
+    margin-top: -170px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+
+  #Layer_1 {
+    display: none;
+  }
+
+  .home-hero {
+    height: auto;
+  }
+
+  .hero-title-container {
+    max-width: 75%;
+    margin-top: 430px;
+  }
+
+  .hero-visit-container {
+    text-align: left;
+    float: left;
+    margin-top: 70px;
+      & p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+      }
+  }
+}
+
+
+// mobile
+
+@media screen and (max-width: 415px) {
+
+
+  .hero-title-container {
+    max-width: 100%;
+    margin-top: 420px;
+  }
+
+  .hero-visit-container {
+    text-align: left;
+    float: left;
+    margin-top: 80px;
+      & p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+      }
+  }
+}

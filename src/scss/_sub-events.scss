@@ -1,0 +1,188 @@
+/*
+ * Sub Events
+ *
+ * This contains styles for sub events
+ * throughout the site
+ *
+ */
+
+.home-events {
+  // background-color: rgba(25, 155, 12, 0.5);
+  // background: red;
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+    & h1 {
+      @extend %clear-margin-padding;
+    }
+}
+
+.home-events-holder {
+  width: 100%;
+  margin-top: 10px;
+
+    & .home-event-container {
+      position: relative;
+      height: 215px;
+      margin-top: $grid-spacing;
+      // background-color: rgba(155,15,25,0.5);
+      overflow: hidden;
+
+        & img {
+          max-width: 99.7%;
+        }
+
+        & .home-event-info {
+          position: relative;
+          background-color: white;
+          padding: $sub-event-padding;
+          margin-top: -5px;
+          // margin-top: -98px;
+          transition: all .3s;
+          z-index: 1;
+
+            & .sub-event-title {
+              font-style: italic;
+              text-transform: uppercase;
+            }
+        }
+
+        & .home-event-cta {
+          position: relative;
+          margin-top: -57px;
+          // margin-top: 0px;
+          background-color: $smith-blue;
+          padding: $sub-event-padding;
+          padding-top: $sub-event-padding + 3px;
+          padding-bottom: $sub-event-padding + 3px;
+          color: white;
+          font-weight: 700;
+          font-size: 1.2em;
+          letter-spacing: 1.1px;
+          transition: all .3s;
+          z-index: 2;
+
+            &:hover {
+              letter-spacing: 2.2px;
+              cursor: pointer;
+            }
+        }
+
+        &:hover {
+          & .home-event-info {
+            margin-top: -98px;
+          }
+          & .home-event-cta {
+            margin-top: 0px;
+          }
+        }
+
+    }
+}
+
+
+// queries
+
+@media screen and (min-width: 1200px) {
+  .home-events-holder {
+    & .home-event-container {
+      & .home-event-info {
+        margin-top: -40px;
+      }
+      &:hover {
+        & .home-event-info {
+          margin-top: -133px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 993px) {
+  .home-events-holder {
+      & .home-event-container {
+        height: 190px;
+          & .home-event-info {
+            margin-top: -10px;
+          }
+          & .home-event-cta {
+            display: none;
+            margin-top: -70px;
+          }
+
+          &:hover {
+            & .home-event-info {
+              margin-top: -110px;
+            }
+            & .home-event-cta {
+              margin-top: -10px;
+            }
+          }
+      }
+    }
+}
+
+// mobile
+ @media screen and (max-width: 993px) {
+   .col-4 {
+     width: 100%;
+   }
+
+   .home-events-holder {
+       & .home-event-container {
+         height: 215px;
+         margin-top: 40px;
+           & .home-event-info {
+             position: absolute;
+             width: 100%;
+             bottom: 0;
+           }
+           & .home-event-cta {
+             margin-top: -57px;
+           }
+           &:hover {
+             & .home-event-info {
+               margin-top: -97px;
+             }
+             & .home-event-cta {
+               margin-top: -57px;
+             }
+           }
+       }
+   }
+ }
+
+ @media screen and (max-width: 415px) {
+   .home-events-holder {
+       & .home-event-container {
+         height: 315px;
+           & .home-event-info {
+             margin-top: -26px;
+           }
+       }
+   }
+ }
+
+ @media screen and (max-width: 376px) {
+   .home-events-holder {
+       & .home-event-container {
+           & .home-event-info {
+             margin-top: -26px;
+           }
+       }
+   }
+ }
+
+ @media screen and (max-width: 321px) {
+   .home-events-holder {
+       & .home-event-container {
+         height: 215px;
+           & .home-event-info {
+             margin-top: -35px;
+           }
+       }
+   }
+ }
