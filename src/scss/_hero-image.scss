@@ -23,14 +23,16 @@
 }
 
 .hero-title-container {
+  position: absolute;
   display: inline-block;
   float: left;
   clear: both;
   max-width: 33%;
-  margin-top: 375px;
+  top: 380px;
   background-color: $nav-bg-dark;
   padding: 20px;
   color: white;
+  z-index: 1;
 
     & .hero-artist-name {
       @extend %clear-margin-padding;
@@ -57,7 +59,8 @@
   position: relative;
   text-align: right;
   float: right;
-  margin-top: -100px;
+  margin-top: 575px;
+  z-index: 1;
     & h2 {
       color: $smith-blue;
       @extend %clear-margin-padding;
@@ -74,15 +77,22 @@
     }
 }
 
+#Layer_1 {
+  position: absolute;
+  top: 540px;
+}
 
 // Queries
 
 @media screen and (min-width: 1500px) {
-  .hero-visit-container {
-    margin-top: -170px;
-  }
+
 }
 
+@media screen and (max-width: 993px) {
+  .hero-title-container {
+    max-width: 80%;
+  }
+}
 
 @media screen and (max-width: 800px) {
 
@@ -95,14 +105,14 @@
   }
 
   .hero-title-container {
-    max-width: 75%;
-    margin-top: 430px;
+    max-width: 80%;
+    top: 430px;
   }
 
   .hero-visit-container {
     text-align: left;
     float: left;
-    margin-top: 70px;
+    margin-top: 660px;
       & p {
         font-size: 1.5em;
         line-height: 1.5em;
@@ -117,14 +127,14 @@
 
 
   .hero-title-container {
-    max-width: 100%;
-    margin-top: 420px;
+    max-width: 93%;
+    bottom: -20px;
   }
 
   .hero-visit-container {
     text-align: left;
     float: left;
-    margin-top: 80px;
+    margin-top: 660px;
       & p {
         font-size: 1.5em;
         line-height: 1.5em;

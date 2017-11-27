@@ -1,0 +1,87 @@
+/*
+ *
+ * projects page styles
+ *
+ */
+
+.projects-nav {
+  margin-top: 170px;
+  & .projects-nav-container {
+    & ul {
+      -webkit-padding-start: 0px;
+      list-style: none;
+      color: $type-dark;
+
+      & li {
+        display: inline-block;
+        position: relative;
+        margin-right: 32px;
+        font-weight: 700;
+        font-size: 20px;
+
+        @include interactive-underline(25px);
+      }
+    }
+  }
+}
+
+.home-events.projects {
+  margin-top: 0px;
+  & .hero-title-container {
+    display: none;
+  }
+
+  & .home-events-holder {
+    & .home-event-container {
+      &:first-child {
+        width: 100%;
+        height: 450px;
+        margin: 0%;
+
+        & .home-event-info {
+          display: none;
+        }
+        & .home-event-cta {
+          display: none;
+        }
+        & .hero-title-container {
+          display: inline-block;
+          left: 0;
+          top: 240px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .home-events.projects {
+    margin-top: 0px;
+    & .hero-title-container {
+      display: none;
+    }
+
+    & .home-events-holder {
+      & .home-event-container {
+        &:first-child {
+          height: 315px;
+
+          & .home-event-info {
+            display: block;
+          }
+          & .home-event-cta {
+            display: none;
+          }
+          & .hero-title-container {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+}

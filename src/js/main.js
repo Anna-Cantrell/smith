@@ -11,11 +11,17 @@ const ham1 = document.getElementById('ham1');
 const ham2 = document.getElementById('ham2');
 const ham3 = document.getElementById('ham3');
 
+
+
 function menuOpen() {
     $('#mobile-nav-menu').addClass('form-open');
     $('#ham1').addClass('ham1');
     $('#ham2').addClass('ham2');
     $('#ham3').addClass('ham3');
+    $('.scrollstop-wrapper').css('overflow', 'hidden')
+    $('.hamburger.dark').css('background', 'white');
+    $('.nav-logo.light').css('background-image', 'url("../img/smith-logo-light.png")');
+
 }
 
 $('#mobile-nav-button').click(function() {
@@ -27,6 +33,10 @@ $('#mobile-nav-button').click(function() {
         $('#ham1').removeClass('ham1');
         $('#ham2').removeClass('ham2');
         $('#ham3').removeClass('ham3');
+        $('.scrollstop-wrapper').css('overflow', 'visible');
+        $('.hamburger.dark').css('background', 'rgb(50,50,50)');
+        $('.nav-logo.light').css('background-image', 'url("../img/smith-logo-dark.png")');
+
     }
 });
 

@@ -109,7 +109,6 @@
             margin-top: -10px;
           }
           & .home-event-cta {
-            display: none;
             margin-top: -70px;
           }
 
@@ -126,14 +125,18 @@
 }
 
 // mobile
- @media screen and (max-width: 993px) {
+ @media screen and (max-width: 800px) {
    .col-4 {
      width: 100%;
    }
 
+   .home-events {
+     margin-top: 100px;
+   }
+
    .home-events-holder {
        & .home-event-container {
-         height: 215px;
+         height: 315px;
          margin-top: 40px;
            & .home-event-info {
              position: absolute;
@@ -141,6 +144,7 @@
              bottom: 0;
            }
            & .home-event-cta {
+             display: none;
              margin-top: -57px;
            }
            &:hover {

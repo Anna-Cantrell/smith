@@ -6,10 +6,12 @@
  *
  */
 
+
  .header-nav {
    height: $nav-height;
    width: 100%;
    position: absolute;
+   top: 0;
 
     &.dark {
       background-color: $nav-bg-dark;
@@ -46,6 +48,9 @@
 
     & .mobile-nav-button {
       display: none;
+      &.button-active {
+        display: none !important;
+      }
     }
 
   }

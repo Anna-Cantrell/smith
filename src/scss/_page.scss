@@ -12,6 +12,11 @@ body {
   color: $type-dark;
 }
 
+.scrollstop-wrapper {
+  overflow: visible;
+  height: 100vh;
+}
+
 h1 {
   font: {
     size: 36px;
