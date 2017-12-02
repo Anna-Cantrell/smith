@@ -8,8 +8,21 @@
 // Wrappers
 body {
   margin: 0;
-  font: 14px 'proxima-nova', helvetica, sans-serif;
+  font: 16px 'proxima-nova', helvetica, sans-serif;
   color: $type-dark;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .scrollstop-wrapper {

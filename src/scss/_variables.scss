@@ -4,6 +4,7 @@
  * This document contains a collection of Sass variables for the website. This
  * allows the use of reuseable values such as colors and fonts.
  */
+$test-bg: rgba(220, 20, 10, 0.1);
 
 $smith-blue: #1a90fb;
 
@@ -16,3 +17,10 @@ $nav-bg-light: rgba(255,255,255,0.5);
 $type-dark: rgb(50,50,50);
 
 $sub-event-padding: 7px;
+
+
+// project individual
+$project-info-margin: 125px;
+
+//project archived
+$archived-row-margin: 25px;

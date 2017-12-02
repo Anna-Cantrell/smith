@@ -7,7 +7,7 @@
  */
 
  footer {
-   height: 350px;
+   min-height: 350px;
    background: {
      image: url('../img/gplaypattern.png');
      size: 160px;
@@ -41,7 +41,7 @@
            clear: both;
            line-height: 1.9em;
 
-           @include interactive-underline(35px);
+           @include interactive-underline(39px);
          }
        }
 
@@ -116,7 +116,7 @@
        image: url('../img/gplaypattern.png');
        size: 160px;
      }
-     height: 1200px;
+     min-height: 1200px;
      padding: 80px 30px;
      text-align: center;
 

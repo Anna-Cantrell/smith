@@ -27,17 +27,13 @@
   margin: 0;
   padding: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5,
-.col-6, .col-7, .col-8, .col-9, .col-10,
-.col-11, .col-12 {
+[class^="col-"] {
   float: left;
   margin-right: 3%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .col-1:last-child, .col-2:last-child, .col-3:last-child, .col-4:last-child, .col-5:last-child,
-  .col-6:last-child, .col-7:last-child, .col-8:last-child, .col-9:last-child, .col-10:last-child,
-  .col-11:last-child, .col-12:last-child {
+  [class^="col-"]:last-child {
     margin-right: 0%; }
 
 .col-1 {
@@ -299,19 +295,8 @@
  */
 body {
   margin: 0;
-  font: 16px 'proxima-nova', helvetica, sans-serif;
+  font: 14px 'proxima-nova', helvetica, sans-serif;
   color: #323232; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
-a:hover {
-  text-decoration: none;
-  color: inherit; }
 
 .scrollstop-wrapper {
   overflow: visible;
@@ -438,23 +423,21 @@ h3 {
     height: 215px;
     margin-top: 3%;
     overflow: hidden; }
-    .home-events-holder .home-event-container a {
-      text-decoration: none;
-      color: #323232; }
     .home-events-holder .home-event-container img {
       max-width: 99.7%; }
     .home-events-holder .home-event-container .home-event-info {
       position: relative;
       background-color: white;
       padding: 7px;
-      margin-top: -10px;
+      margin-top: -5px;
       transition: all .3s;
       z-index: 1; }
       .home-events-holder .home-event-container .home-event-info .sub-event-title {
+        font-style: italic;
         text-transform: uppercase; }
     .home-events-holder .home-event-container .home-event-cta {
       position: relative;
-      margin-top: -83px;
+      margin-top: -57px;
       background-color: #1a90fb;
       padding: 7px;
       padding-top: 10px;
@@ -469,27 +452,25 @@ h3 {
         letter-spacing: 2.2px;
         cursor: pointer; }
     .home-events-holder .home-event-container:hover .home-event-info {
-      margin-top: -130px; }
+      margin-top: -98px; }
     .home-events-holder .home-event-container:hover .home-event-cta {
       margin-top: 0px; }
 
 @media screen and (min-width: 1200px) {
   .home-events-holder .home-event-container .home-event-info {
-    margin-top: -52px; }
-  .home-events-holder .home-event-container .home-event-cta {
-    margin-top: -57px; }
+    margin-top: -40px; }
   .home-events-holder .home-event-container:hover .home-event-info {
-    margin-top: -145px; } }
+    margin-top: -133px; } }
 
 @media screen and (max-width: 993px) {
   .home-events-holder .home-event-container {
     height: 190px; }
     .home-events-holder .home-event-container .home-event-info {
-      margin-top: -15px; }
+      margin-top: -10px; }
     .home-events-holder .home-event-container .home-event-cta {
-      margin-top: -83px; }
+      margin-top: -70px; }
     .home-events-holder .home-event-container:hover .home-event-info {
-      margin-top: -130px; }
+      margin-top: -110px; }
     .home-events-holder .home-event-container:hover .home-event-cta {
       margin-top: -10px; } }
 
@@ -531,7 +512,7 @@ h3 {
 
 /*
  *
- * Main projects page styles
+ * projects page styles
  *
  */
 .projects-nav {
@@ -568,8 +549,6 @@ h3 {
     width: 100%;
     height: 450px;
     margin: 0%; }
-    .home-events.projects .home-events-holder .home-event-container:first-child img {
-      min-width: 100%; }
     .home-events.projects .home-events-holder .home-event-container:first-child .home-event-info {
       display: none; }
     .home-events.projects .home-events-holder .home-event-container:first-child .home-event-cta {
@@ -612,140 +591,19 @@ h3 {
   .hero-individual {
     margin-bottom: 630px; } }
 
-/*
- *
- * Archived projects page styles
- *
- */
 .projects-archived {
   margin-top: 40px; }
-  .projects-archived .archived-row {
-    margin-top: 25px; }
-    .projects-archived .archived-row .archived-img-holder {
-      position: relative;
-      width: 100%;
-      height: 160px;
-      background-color: rgba(220, 20, 10, 0.1);
-      overflow: hidden; }
-      .projects-archived .archived-row .archived-img-holder img {
-        height: 100%; }
-    .projects-archived .archived-row .archived-title {
-      font-weight: 700;
-      font-size: 1.6rem; }
-    .projects-archived .archived-row .rule {
-      height: 1px;
-      background-color: black;
-      width: 100%;
-      margin-top: 25px; }
-    .projects-archived .archived-row:last-child {
-      margin-bottom: 100px; }
-      .projects-archived .archived-row:last-child .rule {
-        display: none; }
-
-@media screen and (max-width: 800px) {
-  .projects-archived .archived-row .archived-title, .projects-archived .archived-row .archived-body {
-    margin-top: 25px; } }
-
-/*
- *
- * Plan your visit
- *
- * This document contains all of the styles
- * for the plan your visit page.
- *
- */
-.page-hero {
-  margin-top: 170px; }
-  .page-hero .page-main-title h1 {
-    margin-top: 0px;
-    font-size: 3em;
-    margin-bottom: 20px; }
-  .page-hero .page-secondary-title {
-    font-weight: 700;
-    margin-bottom: 0;
-    font-size: 1.2em; }
-  .page-hero.page-tertiary-title {
-    margin-top: 0;
-    font-size: 1.2em; }
-
-.visit-info {
-  margin-top: 120px; }
-  .visit-info h1 {
-    margin-top: 0px;
-    color: #1a90fb; }
-  .visit-info .visit-address {
-    font-weight: 700;
-    font-size: 1.6em; }
-
-.visit-map {
-  margin-top: 135px; }
-  .visit-map .map-title {
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-bottom: 20px; }
-  .visit-map .map-holder {
-    width: 100%; }
-    .visit-map .map-holder .visit-map-img {
-      width: 100%;
-      margin-bottom: 100px; }
-
-/*
- *
- * Who we are
- *
- * This document contains all of the styles
- * for the who we are page.
- *
- */
-.about-info {
-  margin-top: 120px; }
-  .about-info h1 {
-    margin-top: 0px;
-    color: #1a90fb; }
-
-.faculty-staff {
-  margin-top: 120px; }
-  .faculty-staff .staff-head-copy::first-line {
-    font-weight: 700; }
-  .faculty-staff .director-container {
-    margin-top: 120px; }
-    .faculty-staff .director-container .director-img-container {
-      overflow: hidden;
-      height: 155px; }
-      .faculty-staff .director-container .director-img-container img {
-        width: 100%;
-        display: block; }
-    .faculty-staff .director-container .director-name {
-      font-size: 1.8em;
-      font-weight: 700; }
-  .faculty-staff .staff-img-container {
+  .projects-archived .archived-row .archived-img-holder {
+    position: relative;
     width: 100%;
-    margin-top: 120px;
-    height: 350px;
+    height: 160px;
+    background-color: rgba(220, 20, 10, 0.1);
     overflow: hidden; }
-    .faculty-staff .staff-img-container img {
-      width: 100%; }
-  .faculty-staff .staff-about {
-    margin-top: 55px; }
-    .faculty-staff .staff-about .staff-title {
-      font-size: 1.8em;
-      font-weight: 700; }
-
-.opportunity {
-  margin-top: 85px;
-  margin-bottom: 100px; }
-  .opportunity .opportunity-title {
+    .projects-archived .archived-row .archived-img-holder img {
+      height: 100%; }
+  .projects-archived .archived-row .archived-title {
     font-weight: 700;
-    font-size: 1.2em;
-    margin-bottom: 20px; }
-  .opportunity .job-container {
-    padding: 20px;
-    min-height: 150px;
-    background-color: white;
-    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1), 0 0 1px 1px rgba(0, 0, 0, 0.1); }
-    .opportunity .job-container .job-title {
-      font-weight: 700;
-      margin-bottom: 0px; }
+    font-size: 1.6rem; }
 
 /*
  *
@@ -755,7 +613,7 @@ h3 {
  *
  */
 footer {
-  min-height: 350px;
+  height: 350px;
   background-image: url("../img/gplaypattern.png");
   background-size: 160px;
   padding-top: 80px; }
@@ -779,7 +637,7 @@ footer {
       footer .footer-section ul li:after {
         content: '';
         position: absolute;
-        top: 39px;
+        top: 35px;
         left: 0;
         height: 3px;
         width: 0px;
@@ -842,7 +700,7 @@ footer {
   footer {
     background-image: url("../img/gplaypattern.png");
     background-size: 160px;
-    min-height: 1200px;
+    height: 1200px;
     padding: 80px 30px;
     text-align: center; }
     footer img {

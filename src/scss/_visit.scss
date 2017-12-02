@@ -1,0 +1,63 @@
+/*
+ *
+ * Plan your visit
+ *
+ * This document contains all of the styles
+ * for the plan your visit page.
+ *
+ */
+
+
+.page-hero {
+  margin-top: 170px;
+  
+  & .page-main-title {
+    & h1 {
+      margin-top: 0px;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+  }
+  & .page-secondary-title {
+    font-weight:700;
+    margin-bottom: 0;
+    font-size: 1.2em;
+  }
+  &.page-tertiary-title {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
+}
+
+.visit-info {
+  margin-top: 120px;
+
+  & h1 {
+    margin-top: 0px;
+    color: $smith-blue;
+  }
+  & .visit-address {
+    font-weight: 700;
+    font-size: 1.6em;
+  }
+}
+
+.visit-map {
+  margin-top: 135px;
+
+  & .map-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  & .map-holder {
+    width: 100%;
+
+    & .visit-map-img {
+      width: 100%;
+      margin-bottom: 100px;
+    }
+  }
+
+}

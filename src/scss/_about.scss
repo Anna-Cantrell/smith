@@ -1,0 +1,90 @@
+/*
+ *
+ * Who we are
+ *
+ * This document contains all of the styles
+ * for the who we are page.
+ *
+ */
+
+ .about-info {
+   margin-top: 120px;
+
+   & h1 {
+     margin-top: 0px;
+     color: $smith-blue;
+   }
+ }
+
+.faculty-staff {
+  margin-top: 120px;
+
+  & .staff-head-copy {
+    &::first-line {
+      font-weight: 700;
+    }
+  }
+
+  & .director-container {
+    margin-top: 120px;
+
+    & .director-img-container {
+      overflow: hidden;
+      height: 155px;
+      & img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    & .director-name {
+      font-size: 1.8em;
+      font-weight: 700;
+    }
+  }
+
+  & .staff-img-container {
+    width: 100%;
+    margin-top: 120px;
+    height: 350px;
+    overflow: hidden;
+
+    & img{
+      width: 100%;
+    }
+  }
+
+  & .staff-about {
+    margin-top: 55px;
+
+    & .staff-title {
+      font-size: 1.8em;
+      font-weight: 700;
+    }
+  }
+
+}
+
+.opportunity {
+  margin-top: 85px;
+  margin-bottom: 100px;
+
+  & .opportunity-title {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  & .job-container {
+    padding: 20px;
+    min-height: 150px;
+    background-color: white;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1),
+    0 0 1px 1px rgba(0, 0, 0, 0.1);
+
+    & .job-title {
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+  }
+}
