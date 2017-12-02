@@ -21,7 +21,6 @@ function menuOpen() {
     $('.scrollstop-wrapper').css('overflow', 'hidden')
     $('.hamburger.dark').css('background', 'white');
     $('.nav-logo.light').css('background-image', 'url("../img/smith-logo-light.png")');
-
 }
 
 $('#mobile-nav-button').click(function() {
@@ -40,53 +39,6 @@ $('#mobile-nav-button').click(function() {
     }
 });
 
-
-$(".selector").mouseenter(function(e) {
-  $(this).css('opacity','1');
-});
-$(".selector").mouseleave(function(e) {
-  $(this).css('opacity','.6');
-  $('#info-box').html($(this).data('info'));
-});
-
-$(".selector").click(function() {
-    var info = this.id + '1';
-    $('.info-body').removeClass('info-active');
-    $('.' + info).addClass('info-active');
-    $(".selector").removeClass('room-active');
-    $(this).addClass('room-active');
-//    alert(info);
-});
-
-$('#square').click(function() {
-    if( square == 'red' ) {
-        $(this).addClass('bluesquare');
-        $('.var-color').removeClass('var-red');
-        $('.var-color').addClass('var-blue');
-        square = 'blue';
-        return
-    } if ( square == 'blue' ) {
-        $(this).removeClass('bluesquare');
-        $(this).addClass('greensquare');
-        $('.var-color').removeClass('var-blue');
-        $('.var-color').addClass('var-green');
-        square = 'green';
-        return
-    } if ( square == 'green' ) {
-        $(this).removeClass('greensquare');
-        $(this).addClass('yellowsquare');
-        $('.var-color').removeClass('var-green');
-        $('.var-color').addClass('var-yellow');
-        square = 'yellow';
-        return
-    } if ( square == 'yellow' ) {
-        $(this).removeClass('yellowsquare');
-        $('.var-color').removeClass('var-yellow');
-        $('.var-color').addClass('var-red');
-        square = 'red';
-        return
-    }
-});
 
 
 
