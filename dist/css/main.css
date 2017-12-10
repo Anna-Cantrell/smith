@@ -628,6 +628,7 @@ h3 {
       background-color: rgba(220, 20, 10, 0.1);
       overflow: hidden; }
       .projects-archived .archived-row .archived-img-holder img {
+        min-width: 100%;
         height: 100%; }
     .projects-archived .archived-row .archived-title {
       font-weight: 700;
